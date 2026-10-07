@@ -4,6 +4,11 @@ import asyncio
 import tempfile
 import random
 from PIL import Image, ImageOps, ImageFilter, ImageEnhance, ImageDraw, ImageFont
+
+# --- PIL COMPATIBILITY PATCH FOR MOVIEPY ---
+if not hasattr(Image, 'ANTIALIAS'):
+    Image.ANTIALIAS = Image.LANCZOS
+
 from mutagen.mp3 import MP3
 from moviepy.editor import ImageClip, AudioFileClip, concatenate_videoclips
 import edge_tts
