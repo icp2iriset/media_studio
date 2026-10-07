@@ -3,4 +3,3 @@ pillow
 mutagen
 moviepy
 edge-tts
-asyncio
