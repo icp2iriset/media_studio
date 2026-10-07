@@ -14,7 +14,7 @@ from moviepy.editor import ImageClip, AudioFileClip, concatenate_videoclips
 import edge_tts
 
 st.set_page_config(page_title="VideoEditor by Vidya", page_icon="🎬", layout="wide")
-st.title("🎬 VideoEditor by Vidya")
+st.title("🎬 Video Editor by Vidya")
 st.write("Generate full HD 16:9 widescreen training videos with neural voiceover and subtitles directly from your browser.")
 
 voice_options = {
