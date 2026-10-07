@@ -1,5 +1,5 @@
 streamlit
-pillow
+pillow<10.0.0
 mutagen
 moviepy
 edge-tts
