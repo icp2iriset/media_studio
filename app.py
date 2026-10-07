@@ -13,8 +13,8 @@ from mutagen.mp3 import MP3
 from moviepy.editor import ImageClip, AudioFileClip, concatenate_videoclips
 import edge_tts
 
-st.set_page_config(page_title="IRISET Media Studio Pro", page_icon="🎓", layout="wide")
-st.title("🎓 IRISET Media Studio Pro (Cloud Widescreen Edition)")
+st.set_page_config(page_title="VideoEditor by Vidya", page_icon="🎬", layout="wide")
+st.title("🎬 VideoEditor by Vidya")
 st.write("Generate full HD 16:9 widescreen training videos with neural voiceover and subtitles directly from your browser.")
 
 voice_options = {
@@ -35,12 +35,12 @@ rate_str = speed_options[selected_speed]
 
 burn_subs = st.sidebar.checkbox("✨ Burn Lower-Third Subtitles", value=True)
 ken_burns = st.sidebar.checkbox("🎞️ Cinematic Zoom Animation", value=True)
-custom_filename = st.sidebar.text_input("Output Video Filename", value="IRISET_Training_Video")
+custom_filename = st.sidebar.text_input("Output Video Filename", value="VideoEditor_Output")
 
 if "slides" not in st.session_state:
     st.session_state.slides = [
-        {"img": None, "script": "Welcome to Indian Railways Institute of Signal Engineering and Telecommunications", "keyword": "IRISET Academy"},
-        {"img": None, "script": "Welcome to Optical Digital Telecommunication Laboratory", "keyword": "ODT Lab"}
+        {"img": None, "script": "Welcome to VideoEditor by Vidya", "keyword": "Welcome"},
+        {"img": None, "script": "Create professional widescreen videos effortlessly", "keyword": "Studio Pro"}
     ]
 
 col1, col2 = st.columns([4, 1])
